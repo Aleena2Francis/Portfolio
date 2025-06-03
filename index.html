@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">ALEENA FRANCIS</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <nav id="hambergur-nav">
+        <div class="logo">Aleena Francis</div>
+        <div class="hambergur-menu">
+            <div class="hambergur-icon" onclick="togglemenu()">
+                <span></span> <!--each span represents each line in the hambergur icon-->
+                <span></span>
+                <span></span>
+            </div>
+        <div class="menu-links" onclick="togglemenu()">
+            <li><a href="#about" onclick="togglemenu()">About</a></li>
+            <li><a href="#Skills" onclick="togglemenu()">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </div>
+    </div>
+    </nav>
+    <section id="Profile">
+        <div class="section-pic-container">
+            <img class="profile-pic" src="./assets/about-pic.jpeg" alt="AleenaFrancis Profile Pic"/>
+        </div>
+        <div class="section__text">
+            <p class="section-text-p1">Hello I'm</p>
+            <h1 class="title">Aleena Francis</h1>
+            <p class="profile_text2">CSE Graduate</p>
+        
+        <div class="profile__buttons">
+            <button class="btn resume" onclick="window.open('./assets/Resume_AleenaFrancis.pdf')">Download Resume</button>
+            <button class="btn contact" onclick="location.href='./#Contact'">Contact Info</button>
+        </div>
+        <div id="Socials__container">
+            <img class="social_icon" src="./assets/linkedin.png" onclick="location.href='https://www.linkedin.com/in/aleena-francis100203/'" alt="Linkedin Profile">
+            <img class="social_icon" src="./assets/github.png" onclick="location.href='https://github.com/Aleena2Francis'" />
+        </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section-text-p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div id="details" class="section-container">
+            <div  class="section-pic-container">
+                <img src="./assets/profile-pic.jpeg" alt="about pic" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Achievements" class="social_icon" />
+                    <h3>Achievements</h3>
+                    <p>Best Project Award, ISTE Palakkad<br>FFE-Amazon Scholar</p> 
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="education" class="social_icon" />
+                    <h3>Education</h3>
+                    <p>B.Tech CSE  8.84<br>Higher Secondary    97%<br>SSLC     98%</p>    
+                </div>
+            </div>
+            <div class="text-container">
+                <p>Motivated Computer Science graduate (2025) and Amazon Future Engineer Scholar with a 
+                    foundation in Python and a growing interest in machine learning and problem-solving. 
+                    Passionate about continuous learning, practical application of knowledge, and effective teamwork.
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="Skills">
+        <p class="section-text-p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skill-subtitle">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="social_icon" />
+                            <h3>HTML</h3>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="social_icon" />
+                            <h3>CSS</h3>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="social_icon" />
+                            <h3>JavaScript</h3>
+                        </article>
+                        </article>
+                    </div>
+
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-subtitle">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="social_icon" />
+                            <h3>Python</h3>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="social_icon" />
+                            <h3>Flask</h3>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="social_icon" />
+                            <h3>Git</h3>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="checkmark" class="social_icon" />
+                            <h3>MySQL</h3>
+                        </article>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    <section id="projects">
+        <p class="section-text-p1">Browse my</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+          <div class="about-containers">
+      
+            <!-- Ethereal Project -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <h2 class="skill-subtitle project-title">Ethereal</h2>
+                <p class="project-content">
+                  <strong>AI-Powered Fake Text Detection System</strong><br>
+                  Ethereal is an intelligent tool designed to distinguish between AI-generated and human-written content. 
+                  Using a fine-tuned BERT model, it accurately detects synthetic text across various formats like plain text and PDFs. 
+                  The system offers high precision and is capable of handling large files with scalable backend integration via Flask.
+                </p>
+                <h3>Tech Stack:</h3>
+                <div class="techstack">
+                  <button class="tech">Python</button>
+                  <button class="tech">PyTorch</button>
+                  <button class="tech">BERT</button>
+                  <button class="tech">Flask</button>
+                </div>
+                <h3>Key Features:</h3>
+                <ul class="Features">
+                  <li>AI-generated text identification</li>
+                  <li>PDF & plain text support</li>
+                  <li>Scalable and lightweight backend</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- VozClara Project -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <h2 class="skill-subtitle project-title">VozClara</h2>
+                <p class="project-content">
+                  <strong>Visual Question Answering for the Visually Impaired</strong><br>
+                  VozClara is a Jetson Orin Nano–powered assistant that helps visually impaired users understand their surroundings. 
+                  It captures images, generates captions, and answers spoken questions using a VQA model (PaliGemma), 
+                  providing responses through speech synthesis.
+                </p>
+                <h3>Tech Stack:</h3>
+                <div class="techstack">
+                  <button class="tech">Python</button>
+                  <button class="tech">Jetson Nano</button>
+                  <button class="tech">PaliGemma</button>
+                  <button class="tech">gTTS</button>
+                </div>
+                <h3>Key Features:</h3>
+                <ul class="Features">
+                  <li>Real-time image captioning</li>
+                  <li>Voice-activated question answering</li>
+                  <li>On-device deployment using Jetson Orin Nano</li>
+                </ul>
+              </div>
+            </div>
+      
+            <!-- Mail-Shield Project -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <h2 class="skill-subtitle project-title">Mail-Shield</h2>
+                <p class="project-content">
+                  <strong>Spam and Phishing Email Detection System</strong><br>
+                  Mail-Shield is a secure email classifier that leverages natural language processing and machine learning 
+                  to identify spam, phishing, and malicious emails before they reach the user. 
+                  It helps protect inboxes using robust filtering based on email content.
+                </p>
+                <h3>Tech Stack:</h3>
+                <div class="techstack">
+                  <button class="tech">Python</button>
+                  <button class="tech">Flask</button>
+                  <button class="tech">NLP</button>
+                </div>
+                <h3>Key Features:</h3>
+                <ul class="Features">
+                  <li>Accurate spam/phishing detection</li>
+                  <li>Machine learning–driven classification</li>
+                </ul>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+    <section id="Contact">
+        <p class="section-text-p1">Get in touch</pp>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img class="social_icon contact-icon mail-icon" src="./assets/email.png" 
+                alt="email" />
+                <a  href="mailto:aleenafrancis1003@gmail.com"><p>aleenafrancis1003@gmail.com</p></a>
+            </div>
+            <div class="contact-info-container">
+                <img class="social_icon contact-icon" src="./assets/linkedin.png" 
+                alt="linkedin" />
+                <a href="https://www.linkedin.com/in/aleena-francis100203/"><p>LinkedIn</p></a>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Aleena Francis</p>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
